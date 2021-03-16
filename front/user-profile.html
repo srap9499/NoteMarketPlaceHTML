@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    
+    <head>
+       
+        <!-- Important Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Title -->
+        <title>User Profile</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/fav-icon/favicon.ico">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="65">
+        <!-- Header -->
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg white-nav-top white-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Logo -->
+                        <a href="#home" class="navbar-brand smooth-scroll">
+                            <img src="images/pre-login/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Main Menu -->
+                    <div class="container">
+                        <div class="collapse navbar-collapse justify-content-end default-header">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#search-notes">Search Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sell-your-notes">Sell Your Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#buyer-requests">Buyer Requests</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#user"><img src="images/user-profile/user-img.png" alt="user"></a></li>
+                                <li class="nav-item"><a class="nav-link btn-general btn btn-logout" href="#logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Ends -->
+
+        <!-- User Profile -->
+        <section id="user">
+            <div class="user-content">
+                <div class="horizontal-heading">
+                    <h2>User Profile</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Basic Profile Details</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="first-name">First Name</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="first-name" placeholder="Enter your first name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="last-name">Last Name</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="last-name" placeholder="Enter your last name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="email">Email</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="email" id="email" placeholder="Enter your email address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="date-of-birth">Date Of Birth</label>
+                                    <input type="date" id="date-of-birth" placeholder="Enter your date of birth">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="gender">Gender</label>
+                                    <select name="gender" id="gender">
+                                        <option value="">Select Your Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="phone-number">Phone Number</label><br>
+                                    <select name="c-code" id="c-code">
+                                        <option value="+91">+91</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <input type="tel" id="phone-number" placeholder="Enter your phone number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="profile-picture">Profile Picture</label>
+                                    <input type="image" id="profile-picture" placeholder="">
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Address Details</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="address-line-1">Address Line 1</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="address-line-1" placeholder="Enter your address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="address-line-2">Address Line 2</label>
+                                    <input type="text" id="address-line-2" placeholder="Enter your address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="city">City</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="city" placeholder="Enter your city">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="state">State</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="state" placeholder="Enter your state">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="zip-code">ZipCode</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="zip-code" placeholder="Enter your zipcode">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="country">Country</label>
+                                    <label class="mendatory">*</label>
+                                    <select name="country" id="country">
+                                        <option value="Select your country">Select your country</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>University and College Information</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="university">University</label>
+                                    <input type="text" id="university" placeholder="Enter your university">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="college">College</label>
+                                    <input type="text" id="college" placeholder="Enter your college">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="submit-btn">
+                                <a class="btn btn-general btn-submit">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- User Profile Ends -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <p>
+                            Copyright &copy; TatvaSoft All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <ul class="social-list">
+                            <li class="text-center"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="text-center"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="text-center"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+        
+        
+        
+        <!-- JQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

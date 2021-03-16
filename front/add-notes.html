@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    
+    <head>
+       
+        <!-- Important Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Title -->
+        <title>User Profile</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/fav-icon/favicon.ico">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="65">
+        <!-- Header -->
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg white-nav-top white-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Logo -->
+                        <a href="#home" class="navbar-brand smooth-scroll">
+                            <img src="images/pre-login/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Main Menu -->
+                    <div class="container">
+                        <div class="collapse navbar-collapse justify-content-end default-header">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#search-notes">Search Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sell-your-notes">Sell Your Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#buyer-requests">Buyer Requests</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#user"><img src="images/user-profile/user-img.png" alt="user"></a></li>
+                                <li class="nav-item"><a class="nav-link btn-general btn btn-logout" href="#logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Ends -->
+
+        <!-- Add Notes -->
+        <section id="add-notes">
+            <div class="add-notes-content">
+                <div class="horizontal-heading">
+                    <h2>Add Notes</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Basic Note Details</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="title">Title</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="title" placeholder="Enter your notes title">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="category">Category</label>
+                                    <label class="mendatory">*</label>
+                                    <select name="category" id="category">
+                                        <option value="">Select your Category</option>
+                                        <option value="01">01</option>
+                                        <option value="02">01</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="profile-picture">Profile Picture</label>
+                                    <input type="image" id="profile-picture" placeholder="Upload a Picture">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="profile-picture">Upload Notes</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="image" id="upload-notes" placeholder="Upload your notes">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="type">Type</label>
+                                    <select name="type" id="type">
+                                        <option value="">Select Your note type</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="number-of-pages">Number of Pages</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="number-of-pages" placeholder="Enter number of note pages">
+                                </div>
+                                <div class="col-md-12">
+                                    <label name="description">Description</label>
+                                    <label class="mendatory">*</label>
+                                    <input type="text" id="description" placeholder="Enter your description">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Institution Information</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="country">Country</label>
+                                    <select name="country" id="country">
+                                        <option value="Select your country">Select your country</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="institution-name">Institution Name</label>
+                                    <input type="text" id="college" placeholder="Enter your Institution name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Course Details</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label name="course-name">Course Name</label>
+                                    <input type="text" id="course-name" placeholder="Enter your course name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="course-code">Course Code</label>
+                                    <input type="text" id="course-code" placeholder="Enter your course code">
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="professor-lecturer">Professor / Lecturer</label>
+                                    <input type="text" id="professor-lecturer" placeholder="Enter your professor name">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <h3>Selling Information</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label name="sell-for">Sell For</label>
+                                        <label class="mendatory">*</label>
+                                        <div class="row">
+                                           <div class="col-md-3">
+                                               <div class="row">
+                                                   <input name="sell" type="radio" class="form-control">
+                                                   <label name="free" id="free">Free</label>
+                                               </div>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <div class="row">
+                                                   <input name="sell" type="radio" class="form-control">
+                                                   <label name="paid" id="paid">Paid</label>
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label name="sell-price">Sell Price</label>
+                                        <label class="mendatory">*</label>
+                                        <input type="text" id="sell-price" placeholder="Enter your price">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label name="note-preview">Note Preview</label>
+                                    <input type="text" id="add-note-preview" placeholder="Upload a File">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div id="submit-btn">
+                                        <a class="btn btn-general btn-submit">Save</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div id="submit-btn">
+                                        <a class="btn btn-general btn-submit">Publish</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Add Notes Ends -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <p>
+                            Copyright &copy; TatvaSoft All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <ul class="social-list">
+                            <li class="text-center"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="text-center"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="text-center"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+        
+        
+        
+        <!-- JQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
