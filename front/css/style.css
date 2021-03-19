@@ -456,7 +456,7 @@ footer .container {
 }
 */
 footer .row {
-    padding: 32px 0 32px 15px;
+    padding: 32px 0 32px 0;
 }
 footer p {
     font-family: "Open Sans", sans-serif;
@@ -910,7 +910,7 @@ ul.note-details li .red {
 ==================================================== */
 ul.pagination,
 ul.pagination-lg {
-    margin: 0;
+    margin: 0 0 50px 0;
     text-align: center;
 }
 ul.pagination li a {
