@@ -1253,9 +1253,30 @@ Notes Review
 #dashboard-published .wrapper,
 .manage .wrapper,
 #dashboard-published #published-search-btn,
-.manage #manage-add-new-btn
-.manage #manage-search-btn {
+.manage #manage-add-new-btn,
+.manage #manage-search-btn,
+.manage.myselect #approve-btn,
+.manage.myselect #reject-btn,
+.manage.myselect #inreview-btn {
     display: inline-block;  
+}
+.manage.myselect .btn-approve,
+.manage.myselect .btn-reject,
+.manage.myselect .btn-inreview {
+    width: 94px;
+    height: 40px;
+    padding: 9px 0;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.manage.myselect .btn-approve {
+    background-color: #28a745;
+}
+.manage.myselect .btn-reject {
+    background-color: #ff3636;
+}
+.manage.myselect .btn-inreview {
+    background-color: #cccccc;
 }
 #dashboard-published .wrapper img {
     position: absolute;
