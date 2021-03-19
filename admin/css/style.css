@@ -1193,6 +1193,9 @@ Notes Review
 .manage .left-heading h4 {
     margin-bottom: 20px;
 }
+.manage.myselect .left-heading h4 {
+    margin-bottom: 30px;
+}
 #dashboard .dashboard-content {
     padding-top: 0;
     margin: 0;
@@ -1227,6 +1230,14 @@ Notes Review
     margin-left: 10px;
     margin-right: 10px;
 }
+.manage.myselect p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
 .manage .btn-add-new {
     height: 50px;
     padding: 14px 20px;
@@ -1250,9 +1261,17 @@ Notes Review
     top: 25%;
     right: 77%;
 }
+.manage.myselect div.myselect-padding {
+    padding-top: 30px;
+}
 .manage .wrapper img {
     position: absolute;
     top: 25%;
+    right: 75%;
+}
+.manage.myselect .wrapper img {
+    position: absolute;
+    top: 47%;
     right: 75%;
 }
 #dashboard-published input,
@@ -1263,6 +1282,13 @@ Notes Review
     margin-bottom: 20px;
     padding-left: 2%;
     padding-left: 50px;
+}
+.manage.myselect select {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    padding-left: 2%;
+    margin-bottom: 20px;
 }
 #dashboard-published select {
     width: 150px;
