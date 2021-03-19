@@ -20,17 +20,17 @@ $(function () {
         if ($(window).scrollTop() > 50) {
 
             //show white nav
-            $('nav').addClass("white-nav-top");
+            $('.home nav').addClass("white-nav-top");
 
             // Show dark logo
-            $('.navbar-brand img').attr("src", "images/pre-login/logo.png");
+            $('.home .navbar-brand img').attr("src", "images/pre-login/logo.png");
         } else {
 
             //hide white nav
-            $('nav').removeClass("white-nav-top");
+            $('.home nav').removeClass("white-nav-top");
 
             // Show logo
-            $('.navbar-brand img').attr("src", "images/pre-login/top-logo.png");
+            $('.home .navbar-brand img').attr("src", "images/pre-login/top-logo.png");
         }
     }
 
