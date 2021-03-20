@@ -36,6 +36,21 @@ $(function () {
 
 });
 
+/* ====================================================
+                Mobile Menu
+==================================================== */
+$(function() {
+    // Show Mobile Nav
+    $('#mobile-nav-open-btn').click(function() {
+        $('#mobile-nav').css('height', '100%');
+    });
+    
+    // Hide Mobile Nav
+    $('#mobile-nav-close-btn').click(function() {
+        $('#mobile-nav').css('height', '0%');
+    });
+});
+
 // Smoothing Scrolling
 $(function () {
 

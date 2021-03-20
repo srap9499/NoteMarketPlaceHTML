@@ -909,10 +909,11 @@ Notes Review
 #dashboard .left-heading h3 {
     margin-bottom: 30px;
 }
-.manage .left-heading h4 {
+.manage .left-heading h3,
+.manage .left-heading h4{
     margin-bottom: 20px;
 }
-.manage.myselect .left-heading h4 {
+.manage.myselect .left-heading h3 {
     margin-bottom: 30px;
 }
 #dashboard .dashboard-content {
@@ -1150,12 +1151,6 @@ table tr {
     height: 75px;
     white-space: nowrap;
     padding: 17px 0;
-}
-
-#my-sold-notes table th,
-#my-sold-notes table td {
-    font-size: 18px;
-    line-height: 22px;
 }
 
 table tbody tr:hover {

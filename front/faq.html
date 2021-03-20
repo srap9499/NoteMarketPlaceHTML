@@ -28,6 +28,9 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
         
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+        
     </head>
     
     <body data-spy="scroll" data-target=".navbar" data-offset="65">
@@ -36,6 +39,10 @@
             <nav class="navbar fixed-top navbar-expand-lg white-nav-top white-navbar">
                 <div class="container">
                     <div class="navbar-header">
+                       
+                        <!-- Mobile Menu Open Button -->
+                        <span id="mobile-nav-open-btn">&#9776;</span>
+                        
                         <!-- Logo -->
                         <a href="#home" class="navbar-brand smooth-scroll">
                             <img src="images/pre-login/logo.png" class="img-fluid" alt="logo">
@@ -45,6 +52,22 @@
                     <!-- Main Menu -->
                     <div class="container">
                         <div class="collapse navbar-collapse justify-content-end default-header">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#search-notes">Search Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sell-your-notes">Sell Your Notes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link btn-general btn btn-login" href="#login">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                        <!-- Mobile Menu Close Button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+                        
+                        <div id="mobile-nav-content">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="nav-link" href="#search-notes">Search Notes</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#sell-your-notes">Sell Your Notes</a></li>
